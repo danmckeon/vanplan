@@ -45,8 +45,49 @@
 		</tr>
 	</table>
 
-	<form>
-	</form>
+	<h3>Reco Form: Please Enter Information for Your Van Destination Below</h3>
+
+	<form action="success.html" method="post">
+      
+      <div>
+        <label>Destination Name:</label>
+        <input type="text" name="dest_name">
+      </div>
+
+      <div>
+        <label>Destination Type: </label>
+        <select name="dest_type">
+          <option value="campground">Campground</option>
+          <option value="parking_lot">Parking Lot</option>
+          <option value="national_forest">National Forest</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label>City:</label>
+        <input type="text" name="dest_city">
+      </div>
+
+      <div>
+        <label>State:</label>
+        <input type="text" name="dest_state">
+      </div>
+
+      <div>
+        <label>Cost/Night: $</label>
+        <input type="number" name="dest_state">
+      </div>
+      
+
+      <div>
+        <label>Any additional comments on your submission:</label>
+        <textarea name="feedback">Please comment here</textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
 
 	<footer>
 		Website created by Dan McKeon
