@@ -1,1 +1,67 @@
-body {background:blue}
+body {
+	max-width: 960px;
+}
+
+h1 {
+	font-size: 3em;
+	font-family: Helvetica, sans-serif;
+}
+
+h2 {
+	font-size:2em;
+}
+
+
+table, th, td {
+	border: 1px solid black;
+}
+
+cite {
+	font-size:0.8em;
+}
+
+footer {
+	font-size:0.8em;	
+}
+
+a:visited {
+	color: grey;
+}
+
+.text_section {
+	font-size: 1.2em;
+}
+
+section#destination_table {
+	margin: 20px auto auto auto;
+}
+
+section#reco_form {
+	display:block;
+	border: 1px dashed red;
+	width: 50%;
+	margin: 20px auto auto auto;
+	padding: 10px;
+}
+
+section#description img {
+	width: 100%;
+	height: auto;
+}
+
+section#comparison_site {
+	background: url("img/ioverlander_logo_opacity25.png");
+	background-position: center;
+}
+
+@media (max-width: 540px) {
+  h1 {
+  	font-size:2em;
+  }
+  h2 {
+  	font-size:1em;
+  }
+  .text_section {
+  	font-size:0.8em;
+  }
+}
