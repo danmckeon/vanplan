@@ -5,98 +5,110 @@
 		<link rel="stylesheet" href="styles.css" type="text/css">
 	</head>
 	<body>
-	<header>
-		<h1>Van Plan</h1>
-		<h2>Welcome to the Revolution</h2>
-	</header>	
-	<img src="img/van_adventure.jpg" alt="Hit the Road" style="width:322px;height:228px;" />
-	<p>Photo Credit: <a href="https://unsplash.com/@dinoreichmuth">Dino Reichmuth</a>  | <a href="https://creativecommons.org/publicdomain/zero/1.0/">License</a>
-	<p>
-		So you own a van and you want to get out of the city, hit the open road. But where will that road take you? That's where we come in. Use the table below to find a good spot for your next night out. And if you have a spot to share with our community, use the Reco Form to let us know the details and our team will review.
-	</p>
+		<main>	
+			<section class="text_section" id="description">
+				<h1>Van Plan</h1>
+				<h2>Welcome to the Revolution</h2>
+				<img src="img/van_adventure.jpg" alt="Hit the Road" />
+				<cite>Photo Credit: <a href="https://unsplash.com/@dinoreichmuth">Dino Reichmuth</a>  | <a href="https://creativecommons.org/publicdomain/zero/1.0/">License</a>
+				</cite>
+				<p>
+					So you own a van and you want to get out of the city, hit the open road. But where will that road take you? That's where we come in. Use the table below to find a good spot for your next night out. And if you have a spot to share with our community, use the Reco Form to let us know the details and our team will review.
+				</p>
+			</section>
 
-	<table border=1>
-		<tr>
-			<th>Name</th>
-			<th>Type</th>
-			<th>City</th>
-			<th>State</th>
-			<th>Cost/Night</th>
-		</tr>
-		<tr>
-			<td>Seattle/Tacoma Koa</td>
-			<td>Campground</td>
-			<td>Kent</td>
-			<td>WA</td>
-			<td>$50</td>
-		</tr>
-		<tr>
-			<td>Walmart Supercenter</td>
-			<td>Parking Lot</td>
-			<td>Yakima</td>
-			<td>WA</td>
-			<td>Free</td>
-		</tr>
-		<tr>
-			<td>Kalaloch Campground</td>
-			<td>Campground</td>
-			<td>Forks</td>
-			<td>WA</td>
-			<td>$22</td>
-		</tr>
-	</table>
+			<section id="destination_table">
+				<h3>Van Destinations</h3>
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>City</th>
+						<th>State</th>
+						<th>Cost/Night</th>
+					</tr>
+					<tr>
+						<td>Seattle/Tacoma Koa</td>
+						<td>Campground</td>
+						<td>Kent</td>
+						<td>WA</td>
+						<td>$50</td>
+					</tr>
+					<tr>
+						<td>Walmart Supercenter</td>
+						<td>Parking Lot</td>
+						<td>Yakima</td>
+						<td>WA</td>
+						<td>Free</td>
+					</tr>
+					<tr>
+						<td>Kalaloch Campground</td>
+						<td>Campground</td>
+						<td>Forks</td>
+						<td>WA</td>
+						<td>$22</td>
+					</tr>
+				</table>
+			</section>
 
-	<h3>Reco Form: Please Enter Information for Your Van Destination Below</h3>
+			<section id="reco_form">
 
-	<form action="success.html" method="post">
-      
-      <div>
-        <label>Destination Name:</label>
-        <input type="text" name="dest_name">
-      </div>
+				<h3>Reco Form: Please Enter Information for Your Van Destination Below</h3>
 
-      <div>
-        <label>Destination Type: </label>
-        <select name="dest_type">
-          <option value="campground">Campground</option>
-          <option value="parking_lot">Parking Lot</option>
-          <option value="national_forest">National Forest</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
+				<form action="success.html" method="post">
+			      
+			      <div>
+			        <label>Destination Name:</label>
+			        <input type="text" name="dest_name">
+			      </div>
 
-      <div>
-        <label>City:</label>
-        <input type="text" name="dest_city">
-      </div>
+			      <div>
+			        <label>Destination Type: </label>
+			        <select name="dest_type">
+			          <option value="campground">Campground</option>
+			          <option value="parking_lot">Parking Lot</option>
+			          <option value="national_forest">National Forest</option>
+			          <option value="other">Other</option>
+			        </select>
+			      </div>
 
-      <div>
-        <label>State:</label>
-        <input type="text" name="dest_state">
-      </div>
+			      <div>
+			        <label>City:</label>
+			        <input type="text" name="dest_city">
+			      </div>
 
-      <div>
-        <label>Cost/Night: $</label>
-        <input type="number" name="dest_state">
-      </div>
-      
+			      <div>
+			        <label>State:</label>
+			        <input type="text" name="dest_state">
+			      </div>
 
-      <div>
-        <label>Any additional comments on your submission:</label>
-        <textarea name="feedback">Please comment here</textarea>
-      </div>
+			      <div>
+			        <label>Cost/Night: $</label>
+			        <input type="number" name="dest_state">
+			      </div>
 
-      <button type="submit">Submit</button>
+			      <div>
+			        <label>Any additional comments on your submission:</label>
+			        <textarea name="feedback">Please comment here</textarea>
+			      </div>
 
-    </form>
+			      <button type="submit">Submit</button>
 
-    <p>
-    	Another website along the same vein is <a href="http://ioverlander.com/">iOverlander</a>. They have an easily navigable interface and are very strong for international destinations. Their US destinations are so-so an the website loads very slowly. One thing I do not recognize in the source code are a series of "var"s in the script section. These may be javascript, which I am not that familiar with. It looks like this may have to do with how recently spots on the map have been verified.
-    </p>
+			    </form>
 
-	<footer>
-		Website created by Dan McKeon
-	</footer>
+		    </section>
+
+		    <section class="text_section" id="comparison_site">
+		    	<h3>Van Plan Compared to iOverlander</h3>
+			    <p>
+			    	Another website along the same vein is <a href="http://ioverlander.com/">iOverlander</a>. They have an easily navigable interface and are very strong for international destinations. Their US destinations are so-so an the website loads very slowly. One thing I do not recognize in the source code are a series of "var"s in the script section. These may be javascript, which I am not that familiar with. It looks like this may have to do with how recently spots on the map have been verified.
+			    </p>
+		    </section>
+	    </main>
+
+		<footer>
+			<p>Website created by Dan McKeon</p>
+		</footer>
 
 	</body>
 </html>
